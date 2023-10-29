@@ -1,0 +1,5 @@
+
+<div *ngFor="let column of columns; let index = index">
+   {{column.label}}
+  <button *ngIf="index > 0" (click)="moveUp(column)" >Up</button>
+</div> 

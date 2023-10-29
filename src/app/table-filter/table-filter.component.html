@@ -1,0 +1,6 @@
+
+<div *ngFor="let column of columns">
+    <mat-checkbox [checked]="isSelected(column.key)" (change)="selectionChange({columnName: column.key, checked: $event.checked})" ></mat-checkbox>
+   {{column.label}}
+  
+</div> 
